@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow" />
+    <meta property="og:image" content="https://tmdstudios.files.wordpress.com/2023/01/logo-copy.png" />
+    <meta property="og:title" content="TMD Studios">
+    <meta name="description" property="og:description" content="TMD Studios is a one-man software development team with a focus on open-source projects.">
+    <meta name="twitter:card" value="summary">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="media/favicon.ico?" type="image/x-icon" />
+    <title>TMD Studios</title>
+</head>
+<body>
+    <div>
+        <h1><img class="tmdLogo" src="media/tmdLogo.png"></h1>
+    </div>
+
+    <div class="intro">
+        <p class="introPt1">TMD Studios is a one-man software development team with a focus on open-source projects.</p>
+        <p class="introPt2">Most applications displayed on this page can be found on the <a href="https://github.com/TMDStudios">TMD Studios GitHub</a> page.</p>
+        <p class="introAlt"><a href="https://github.com/TMDStudios">TMD Studios GitHub Page</a></p>
+    </div>
+    
+    <div class="project">
+        <p onclick="prevApp()" class="prev">&lt;</p>
+        <div class="videoContainer" id="mediaContainer">
+            <video id="video" width="320" height="480" autoplay muted controls loop poster="media/BlockWars.png">
+                <source src="media/BlockWars.mp4" type="video/mp4">Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="description">
+            <div id="description">
+                <h4 id="name">Block Wars</h4>
+                <p>Shoot your way through an onslaught of blocks and enemy ships</p>
+                <p>
+                    <ul>
+                        <li>Blocks that get past you will stack, making the play area smaller</li>
+                        <li>Use power-ups to destroy stacked blocks</li>
+                        <li>Enemy ships get more difficult as the game progresses</li>
+                        <li>Follow enemy patterns to anticipate their attacks</li>
+                    </ul>
+                </p>
+                <p>How far can you get?</p>
+            </div>
+            <p class="storeLink" id="link"><a href="https://play.google.com/store/apps/details?id=com.tmdstudios.blockwars"><img src="media/googleBanner.png"/></a></p>
+        </div>
+        <p onclick="nextApp()" class="next">&gt;</p>
+    </div>
+
+    <div class="mobileLink" id="mobileLink">
+        <p class="storeLink" id="link"><a href="https://play.google.com/store/apps/details?id=com.tmdstudios.blockwars"><img src="media/googleBanner.png"/></a></p>
+    </div>
+
+    <div class="banner-div">
+        <a href="https://freebitco.in/?r=15749838"><img class="banner" src="media/bitcoinbanner.png"/></a>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
