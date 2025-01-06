@@ -7,7 +7,7 @@ var apps = [
         "poster":"media/BlockWars.png",
         "hasVideo":"true",
         "thumb":"",
-	    "fullImg":"",
+        "fullImg":"",
         "gitHubLink":""
     },
     {
@@ -18,7 +18,7 @@ var apps = [
         "poster":"media/BuddyBreakout.png",
         "hasVideo":"true",
         "thumb":"",
-	    "fullImg":"",
+        "fullImg":"",
         "gitHubLink":""
     },
     {
@@ -29,7 +29,7 @@ var apps = [
         "poster":"media/PuzzledKnight.png",
         "hasVideo":"true",
         "thumb":"",
-	    "fullImg":"",
+        "fullImg":"",
         "gitHubLink":""
     },
     {
@@ -40,7 +40,7 @@ var apps = [
         "poster":"media/RTR.png",
         "hasVideo":"true",
         "thumb":"",
-	    "fullImg":"",
+        "fullImg":"",
         "gitHubLink":""
     },
     {
@@ -51,7 +51,7 @@ var apps = [
         "poster":"media/PLC.png",
         "hasVideo":"true",
         "thumb":"",
-	    "fullImg":"",
+        "fullImg":"",
         "gitHubLink":""
     },
     {
@@ -62,7 +62,7 @@ var apps = [
         "poster":"media/CryptoLedger.png",
         "hasVideo":"true",
         "thumb":"",
-	    "fullImg":"",
+        "fullImg":"",
         "gitHubLink":""
     },
     {
@@ -73,30 +73,19 @@ var apps = [
         "poster":"media/MockTrader.png",
         "hasVideo":"true",
         "thumb":"",
-	    "fullImg":"",
+        "fullImg":"",
         "gitHubLink":""
     },
     {
-        "name":"Crypto Ledger",
-        "description": '<h4><a href="http://cryptoledger.pythonanywhere.com/">Crypto Ledger</a></h4><p>Open-source website for tracking cryptocurrency trades</p>',
+        "name":"MingSec",
+        "description": '<h4><a href="https://github.com/TMDStudios/MingSec">MingSec</a></h4><p>DIY home security system designed to leverage OpenCV for motion detection.</p>',
         "link":"",
         "video":"",
         "poster":"",
         "hasVideo":"false",
-        "thumb":"media/CryptoLedgerWebsiteThumb.png",
-	    "fullImg":"media/CryptoLedgerWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/crypto_ledger"
-    },
-    {
-        "name":"Mock Trader",
-        "description": '<h4><a href="https://mocktrader-prod-mocktrader-wdutfz.mo4.mogenius.io/">Mock Trader</a></h4><p>Open-source Bitcoin trading game</p>',
-        "link":"",
-        "video":"",
-        "poster":"",
-        "hasVideo":"false",
-        "thumb":"media/MockTraderWebsiteThumb.png",
-	    "fullImg":"media/MockTraderWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/mock_trader"
+        "thumb":"media/MingSecWebsiteThumb.png",
+        "fullImg":"media/MingSecWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/MingSec"
     },
     {
         "name":"Game Room",
@@ -106,7 +95,7 @@ var apps = [
         "poster":"",
         "hasVideo":"false",
         "thumb":"media/GameRoomWebsiteThumb.png",
-	    "fullImg":"media/GameRoomWebsite.png",
+        "fullImg":"media/GameRoomWebsite.png",
         "gitHubLink":"https://github.com/TMDStudios/GameRoom"
     },
     {
@@ -117,8 +106,19 @@ var apps = [
         "poster":"",
         "hasVideo":"false",
         "thumb":"media/StudyRoomWebsiteThumb.png",
-	    "fullImg":"media/StudyRoomWebsite.png",
+        "fullImg":"media/StudyRoomWebsite.png",
         "gitHubLink":"https://github.com/TMDStudios/StudyRoom"
+    },
+    {
+        "name":"Ninja Stars",
+        "description": '<h4><a href="https://github.com/TMDStudios/ninja-stars">Ninja Stars</a></h4><p>A tool for students to organize around a topic.</p>',
+        "link":"",
+        "video":"",
+        "poster":"",
+        "hasVideo":"false",
+        "thumb":"media/NinjaStarsWebsiteThumb.png",
+        "fullImg":"media/NinjaStarsWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/ninja-stars"
     }
 ];
 var currentApp = 0;

@@ -1,9 +1,9 @@
 *{margin: 0; padding: 0;}
 body {
-    background-color: #bababaae;
-	width: 80vw;
+    background-color: #708090;
+    width: 80vw;
     max-width: 1080px;
-	margin: auto;
+    margin: auto;
     font-family: sans-serif;
 }
 h1 {
@@ -36,27 +36,40 @@ h4 a:hover, h6 a:hover {
 .websiteInfo p {
     color: #dedcde;
 }
-.tmdLogo {
-    height: 200px;
-    margin-bottom: -25px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
 }
-hr {
-	margin-top: 8px;
-	margin-bottom: 8px;
+.header p, .header li {
+    padding: 4px 0px;
+}
+.photo {
+    flex: 1;
+}
+.photo img {
+    height: 200px;
+    border-radius: 50%;
 }
 .intro {
     padding: 8px;
     margin-bottom: 24px;
-    text-align: center;
-    color: #1b4860;
+    color: #dedcde;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.intro ul {
+    padding-left: 2rem;
 }
 .intro a {
     text-decoration: none;
-    color: #1b4860;
+    color: rgb(189, 238, 255);
 }
 .intro a:hover {
-    color: #002cbe;
-    background-color: #dedcde;
+    color: #333333;
+    text-decoration: underline;
 }
 .project {
     overflow-y: hidden;
@@ -137,9 +150,9 @@ hr {
     text-align: center;
 }
 .banner-div {
-	width: 60%; 
-	margin: auto; 
-	text-align: center;
+    width: 60%; 
+    margin: auto; 
+    text-align: center;
 }
 .banner {
     box-shadow: 0 0 0 0 rgb(87, 114, 187);
@@ -152,15 +165,19 @@ hr {
     box-shadow: 0 0 12px 0 rgb(137, 181, 248);
 }
 
-@media all and (max-width: 550px){
+@media all and (max-width: 975px){
     body {
         width: 96vw;
         max-width: 96vw;
         height: var(--app-height);
     }
-    .tmdLogo {
+    .header {
+        height: 180px;
+        width: fit-content;
+        margin: auto;
+    }
+    .photo img {
         height: 100px;
-        margin-top: -8px;
     }
     .intro {
         margin-bottom: 2px;
@@ -229,7 +246,7 @@ hr {
         max-width: 100%;
     }
 }
-@media all and (min-width: 551px){
+@media all and (min-width: 975px){
     .introAlt, .mobileLink {
         display: none;
     }
