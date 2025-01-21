@@ -1,4 +1,4 @@
-var apps = [
+const apps = [
     {
         "name":"Block Wars",
         "description": `
@@ -18,7 +18,7 @@ var apps = [
         "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.blockwars" target="_blank"><img src="media/googleBanner.png"/></a>',
         "video":"media/BlockWars.mp4",
         "poster":"media/BlockWars.png",
-        "hasVideo":"true",
+        "hasVideo":true,
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
@@ -42,7 +42,7 @@ var apps = [
         "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.buddybreakout" target="_blank"><img src="media/googleBanner.png"/></a>',
         "video":"media/BuddyBreakout.mp4",
         "poster":"media/BuddyBreakout.png",
-        "hasVideo":"true",
+        "hasVideo":true,
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
@@ -66,7 +66,7 @@ var apps = [
         "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.puzzledknight" target="_blank"><img src="media/googleBanner.png"/></a>',
         "video":"media/PuzzledKnight.mp4",
         "poster":"media/PuzzledKnight.png",
-        "hasVideo":"true",
+        "hasVideo":true,
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
@@ -90,7 +90,7 @@ var apps = [
         "link":'<a href="https://play.google.com/store/apps/details?id=com.wordpress.tmdstudios" target="_blank"><img src="media/googleBanner.png"/></a>',
         "video":"media/RTR.mp4",
         "poster":"media/RTR.png",
-        "hasVideo":"true",
+        "hasVideo":true,
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
@@ -114,7 +114,7 @@ var apps = [
         "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.python" target="_blank"><img src="media/googleBanner.png"/></a>',
         "video":"media/PLC.mp4",
         "poster":"media/PLC.png",
-        "hasVideo":"true",
+        "hasVideo":true,
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
@@ -130,10 +130,20 @@ var apps = [
         "link":"",
         "video":"",
         "poster":"",
-        "hasVideo":"false",
+        "hasVideo":false,
         "thumb":"media/MingSecWebsiteThumb.png",
         "fullImg":"media/MingSecWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/MingSec"
+        "gitHubLink":"https://github.com/TMDStudios/MingSec",
+        "hasSlideshow":true,
+        "images":[
+            "media/MingSecWebsiteThumb.png",
+            "media/MingSecWebsiteThumb1.png",
+            "media/MingSecWebsiteThumb2.png",
+            "media/MingSecWebsiteThumb3.png",
+            "media/MingSecWebsiteThumb4.png",
+            "media/MingSecWebsiteThumb5.png",
+            "media/MingSecWebsiteThumb6.png"
+        ]
     },
     {
         "name":"Game Room",
@@ -146,10 +156,11 @@ var apps = [
         "link":"",
         "video":"",
         "poster":"",
-        "hasVideo":"false",
+        "hasVideo":false,
         "thumb":"media/GameRoomWebsiteThumb.png",
         "fullImg":"media/GameRoomWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/GameRoom"
+        "gitHubLink":"https://github.com/TMDStudios/GameRoom",
+        "hasSlideshow":false
     },
     {
         "name":"Study Room",
@@ -162,10 +173,11 @@ var apps = [
         "link":"",
         "video":"",
         "poster":"",
-        "hasVideo":"false",
+        "hasVideo":false,
         "thumb":"media/StudyRoomWebsiteThumb.png",
         "fullImg":"media/StudyRoomWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/StudyRoom"
+        "gitHubLink":"https://github.com/TMDStudios/StudyRoom",
+        "hasSlideshow":false
     },
     {
         "name":"Ninja Stars",
@@ -178,10 +190,11 @@ var apps = [
         "link":"",
         "video":"",
         "poster":"",
-        "hasVideo":"false",
+        "hasVideo":false,
         "thumb":"media/NinjaStarsWebsiteThumb.png",
         "fullImg":"media/NinjaStarsWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/ninja-stars"
+        "gitHubLink":"https://github.com/TMDStudios/ninja-stars",
+        "hasSlideshow":false
     },
     {
         "name":"Crypto Ledger",
@@ -202,7 +215,7 @@ var apps = [
         "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.cryptoledgerkotlin" target="_blank"><img src="media/googleBanner.png"/></a>',
         "video":"media/CryptoLedger.mp4",
         "poster":"media/CryptoLedger.png",
-        "hasVideo":"true",
+        "hasVideo":true,
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
@@ -226,13 +239,19 @@ var apps = [
         "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.mocktrader" target="_blank"><img src="media/googleBanner.png"/></a>',
         "video":"media/MockTrader.mp4",
         "poster":"media/MockTrader.png",
-        "hasVideo":"true",
+        "hasVideo":true,
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
     }
 ];
-var currentApp = 0;
+let currentApp = 0;
+let currentIndex = 0;
+let totalImages = 1;
+let intervalId;
+const mediaContainer = document.getElementById("mediaContainer");
+const description = document.getElementById("description");
+const mobileLink = document.getElementById("mobileLink");
 
 function prevApp(){
     if(currentApp>0){
@@ -253,26 +272,54 @@ function nextApp(){
 }
 
 function showApp(){
+    stopAutoCycle();
     const isSmallScreen = window.matchMedia("(max-width: 975px)").matches;
-    if(apps[currentApp].hasVideo=="true"){
+    const projectRight = document.getElementById("project-right");
+    if(apps[currentApp].hasVideo==true){
         if(!isSmallScreen){
-            document.getElementById("project-right").style.display = "block";
+            projectRight.style.display = "block";
         }else{
-            document.getElementById("project-right").style.display = "none";
+            projectRight.style.display = "none";
         }
-        document.getElementById("mobileLink").innerHTML = '<p class="storeLink" id="link"><a href="https://play.google.com/store/apps/details?id=com.tmdstudios.blockwars"><img src="media/googleBanner.png"/></a></p>';
-        document.getElementById("mediaContainer").innerHTML = '<video id="video" width="320" height="480" autoplay muted controls loop poster="media/BlockWars.png"><source src="media/BlockWars.mp4" type="video/mp4">Your browser does not support the video tag.</video>'
-        document.getElementById("description").innerHTML = apps[currentApp].description;
+        mobileLink.innerHTML = apps[currentApp].link ? `<p class="storeLink" id="link">${apps[currentApp].link}</p>` : "";
+        mediaContainer.innerHTML = `<video id="video" width="320" height="480" autoplay muted controls loop poster="${apps[currentApp].poster}"><source src="${apps[currentApp].video}" type="video/mp4">Your browser does not support the video tag.</video>`
+        description.innerHTML = apps[currentApp].description;
         document.getElementById("link").innerHTML = apps[currentApp].link;
-        document.getElementById("video").setAttribute("src", apps[currentApp].video);
-        document.getElementById("video").setAttribute("poster", apps[currentApp].poster);
     }else{
-        document.getElementById("mediaContainer").innerHTML = '<img id="websiteImg" onclick="viewImage()" src="'+apps[currentApp].thumb+'"/><div class="websiteInfo">'+apps[currentApp].description+'</div>';
-        document.getElementById("description").innerHTML = '';
-        document.getElementById("project-right").style.display = "none";
-        document.getElementById("link").innerHTML = "";
-        document.getElementById("mobileLink").innerHTML = "";
+        mediaContainer.innerHTML = '<img id="websiteImg" alt="Website screenshot" onclick="viewImage()" src="'+apps[currentApp].thumb+'"/><div class="websiteInfo">'+apps[currentApp].description+'</div>';
+        description.innerHTML = '';
+        projectRight.style.display = "none";
+        mobileLink.innerHTML = "";
+        const websiteImg = document.getElementById("websiteImg");
+        if(apps[currentApp].hasSlideshow){
+            currentIndex = 0;
+            totalImages = apps[currentApp].images.length-1;
+            websiteImg.addEventListener('mouseenter', stopAutoCycle);
+            websiteImg.addEventListener('mouseleave', startAutoCycle);
+            updateImage();
+            startAutoCycle();
+        }else{
+            websiteImg.removeEventListener('mouseenter', stopAutoCycle);
+            websiteImg.removeEventListener('mouseleave', startAutoCycle);
+        }
     }
+}
+
+function updateImage(){
+    document.getElementById("websiteImg").src = apps[currentApp].images[currentIndex];
+}
+
+function nextImg(){
+    currentIndex = currentIndex < totalImages ? currentIndex + 1 : 0;
+    updateImage();
+}
+
+function startAutoCycle(){
+    intervalId = setInterval(nextImg, 2500);
+}
+
+function stopAutoCycle(){
+    clearInterval(intervalId);
 }
 
 function viewImage(){
