@@ -13,9 +13,14 @@ const apps = [
             <p>Java, Android Studio, LibGDX, Google SDK (Analytics, Google Pay, Leaderboards)</p>
             <br>
             <h5>Deployment:</h5>
-            <p>Google Play, Apple App Store, Amazon Appstore, itch.io</p>
+            <p>
+                <s>Google Play</s>, 
+                <s>Apple App Store</s>, 
+                <a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank">Amazon Appstore</a>
+            </p>
+            <p><a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png"/></a></p>
         `,
-        "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.blockwars" target="_blank"><img src="media/googleBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png"/></a>',
         "video":"media/BlockWars.mp4",
         "poster":"media/BlockWars.png",
         "hasVideo":true,
@@ -37,9 +42,14 @@ const apps = [
             <p>Java, Android Studio, LibGDX, Google SDK (Analytics, Google Pay, Leaderboards)</p>
             <br>
             <h5>Deployment:</h5>
-            <p>Google Play, Apple App Store, Amazon Appstore</p>
+            <p>
+                <s>Google Play</s>, 
+                <s>Apple App Store</s>, 
+                <a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank">Amazon Appstore</a>
+            </p>
+            <p><a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank"><img src="media/amazonBanner.png"/></a></p>
         `,
-        "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.buddybreakout" target="_blank"><img src="media/googleBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank"><img src="media/amazonBanner.png"/></a>',
         "video":"media/BuddyBreakout.mp4",
         "poster":"media/BuddyBreakout.png",
         "hasVideo":true,
@@ -61,9 +71,16 @@ const apps = [
             <p>Java, Android Studio, LibGDX, Google SDK (Analytics, Google Pay, Leaderboards)</p>
             <br>
             <h5>Deployment:</h5>
-            <p>Google Play, Apple App Store, Amazon Appstore, itch.io, Kongregate</p>
+            <p>
+                <s>Google Play</s>, 
+                <s>Apple App Store</s>, 
+                <a href="https://www.amazon.com/TMD-Studios-Puzzled-Knight/dp/B085CMGK2K" target="_blank">Amazon Appstore</a>, 
+                <a href="https://tmd-studios.itch.io/puzzled-knight-browser" target="_blank">itch.io</a>, 
+                <a href="https://www.kongregate.com/games/TMD_Studios/puzzled-knight" target="_blank">Kongregate</a>
+            </p>
+            <p><a href="https://www.amazon.com/TMD-Studios-Puzzled-Knight/dp/B085CMGK2K" target="_blank"><img src="media/amazonBanner.png"/></a></p>
         `,
-        "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.puzzledknight" target="_blank"><img src="media/googleBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/TMD-Studios-Puzzled-Knight/dp/B085CMGK2K" target="_blank"><img src="media/amazonBanner.png"/></a>',
         "video":"media/PuzzledKnight.mp4",
         "poster":"media/PuzzledKnight.png",
         "hasVideo":true,
@@ -85,9 +102,16 @@ const apps = [
             <p>Java, Android Studio, LibGDX, Google SDK (Analytics, Google Pay, Leaderboards)</p>
             <br>
             <h5>Deployment:</h5>
-            <p>Google Play, Apple App Store, Amazon Appstore, itch.io, Kongregate</p>
+            <p>
+                <s>Google Play</s>, 
+                <s>Apple App Store</s>, 
+                <a href="https://www.amazon.com/TMD-Studios-Road-To-Rage/dp/B08595G3JR" target="_blank">Amazon Appstore</a>, 
+                <a href="https://tmd-studios.itch.io/road-to-rage-browser-version" target="_blank">itch.io</a>, 
+                <a href="https://www.kongregate.com/games/TMD_Studios/road-to-rage" target="_blank">Kongregate</a>
+            </p>
+            <p><a href="https://www.amazon.com/TMD-Studios-Road-To-Rage/dp/B08595G3JR" target="_blank"><img src="media/amazonBanner.png"/></a></p>
         `,
-        "link":'<a href="https://play.google.com/store/apps/details?id=com.wordpress.tmdstudios" target="_blank"><img src="media/googleBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/TMD-Studios-Road-To-Rage/dp/B08595G3JR" target="_blank"><img src="media/amazonBanner.png"/></a>',
         "video":"media/RTR.mp4",
         "poster":"media/RTR.png",
         "hasVideo":true,
@@ -109,9 +133,14 @@ const apps = [
             <p>Java, Android Studio, LibGDX, Google SDK (Analytics, Google Pay)</p>
             <br>
             <h5>Deployment:</h5>
-            <p>Google Play, Apple App Store, Amazon Appstore</p>
+            <p>
+                <s>Google Play</s>, 
+                <s>Apple App Store</s>, 
+                <a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank">Amazon Appstore</a>
+            </p>
+            <p><a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank"><img src="media/amazonBanner.png"/></a></p>
         `,
-        "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.python" target="_blank"><img src="media/googleBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank"><img src="media/amazonBanner.png"/></a>',
         "video":"media/PLC.mp4",
         "poster":"media/PLC.png",
         "hasVideo":true,
@@ -127,7 +156,7 @@ const apps = [
             <hr>
             <p>Python, OpenCV, Dropbox API, Django, REST API, JavaScript, Kotlin, Linux, SSH</p>
         `,
-        "link":"",
+        "link":'<a href="https://github.com/TMDStudios/MingSec" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -148,12 +177,12 @@ const apps = [
     {
         "name":"Game Room",
         "description": `
-            <h5><a href="https://gameroom.up.railway.app/" target="_blank">Game Room</a></h5>
+            <h5><a href="https://github.com/TMDStudios/GameRoom" target="_blank">Game Room</a></h5>
             <p>A platform for educators to play games and/or review materials with their students</p>
             <hr>
             <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, STOMP, jQuery, Docker</p>
         `,
-        "link":"",
+        "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -165,12 +194,12 @@ const apps = [
     {
         "name":"Study Room",
         "description": `
-            <h5><a href="https://studyroom.tmdstudios.net/" target="_blank">Study Room</a></h5>
+            <h5><a href="https://studyroom.up.railway.app/" target="_blank">Study Room</a></h5>
             <p>Open-source platform for students to improve their English vocabulary and grammar</p>
             <hr>
             <p>JavaScript, REST API, HTML, CSS, AJAX, DOM Manipulation, Event Handling, XMLHttpRequest</p>
         `,
-        "link":"",
+        "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -187,7 +216,7 @@ const apps = [
             <hr>
             <p>Python, Django, REST API, JWT, JavaScript, SPA, Chrome Extension, React</p>
         `,
-        "link":"",
+        "link":'<a href="https://github.com/TMDStudios/ninja-stars" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -210,9 +239,10 @@ const apps = [
             <p>Kotlin, Android Studio, REST API</p>
             <br>
             <h5>Deployment:</h5>
-            <p>Google Play</p>
+            <p><s>Google Play</s></p>
+            <p><a href="https://github.com/TMDStudios/crypto_ledger_app_kotlin" target="_blank"><img src="media/GitHub_Logo_White.png"/></a></p>
         `,
-        "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.cryptoledgerkotlin" target="_blank"><img src="media/googleBanner.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/crypto_ledger_app_kotlin" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"media/CryptoLedger.mp4",
         "poster":"media/CryptoLedger.png",
         "hasVideo":true,
@@ -234,9 +264,10 @@ const apps = [
             <p>Kotlin, Android Studio, JSON</p>
             <br>
             <h5>Deployment:</h5>
-            <p>Google Play</p>
+            <p><s>Google Play</s></p>
+            <p><a href="https://github.com/TMDStudios/MockTrader" target="_blank"><img src="media/GitHub_Logo_White.png"/></a></p>
         `,
-        "link":'<a href="https://play.google.com/store/apps/details?id=com.tmdstudios.mocktrader" target="_blank"><img src="media/googleBanner.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/MockTrader" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"media/MockTrader.mp4",
         "poster":"media/MockTrader.png",
         "hasVideo":true,
@@ -251,7 +282,7 @@ let totalImages = 1;
 let intervalId;
 const mediaContainer = document.getElementById("mediaContainer");
 const description = document.getElementById("description");
-const mobileLink = document.getElementById("mobileLink");
+const appLink = document.getElementById("appLink");
 
 function prevApp(){
     if(currentApp>0){
@@ -275,21 +306,19 @@ function showApp(){
     stopAutoCycle();
     const isSmallScreen = window.matchMedia("(max-width: 975px)").matches;
     const projectRight = document.getElementById("project-right");
+    appLink.innerHTML = `<p>${apps[currentApp].link}</p>`;
     if(apps[currentApp].hasVideo==true){
         if(!isSmallScreen){
             projectRight.style.display = "block";
         }else{
             projectRight.style.display = "none";
         }
-        mobileLink.innerHTML = apps[currentApp].link ? `<p class="storeLink" id="link">${apps[currentApp].link}</p>` : "";
         mediaContainer.innerHTML = `<video id="video" width="320" height="480" autoplay muted controls loop poster="${apps[currentApp].poster}"><source src="${apps[currentApp].video}" type="video/mp4">Your browser does not support the video tag.</video>`
         description.innerHTML = apps[currentApp].description;
-        document.getElementById("link").innerHTML = apps[currentApp].link;
     }else{
         mediaContainer.innerHTML = '<img id="websiteImg" alt="Website screenshot" onclick="viewImage()" src="'+apps[currentApp].thumb+'"/><div class="websiteInfo">'+apps[currentApp].description+'</div>';
         description.innerHTML = '';
         projectRight.style.display = "none";
-        mobileLink.innerHTML = "";
         const websiteImg = document.getElementById("websiteImg");
         if(apps[currentApp].hasSlideshow){
             currentIndex = 0;

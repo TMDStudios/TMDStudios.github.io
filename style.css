@@ -29,11 +29,11 @@ h6 {
     padding-top: 8px;
     text-align: center;
 }
-h4 a, h5 a, h6 a {
+h4 a, h5 a, h6 a, .project-right a {
     text-decoration: none;
     color: rgb(189, 238, 255);
 }
-h4 a:hover, h5 a:hover, h6 a:hover {
+h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     color: #335bdb;
 }
 .websiteInfo p {
@@ -155,23 +155,8 @@ h4 a:hover, h5 a:hover, h6 a:hover {
     width: 240px;
     padding-top: 16px;
 }
-.storeLink {
-    text-align: center;
-}
-.banner-div {
-    width: 60%; 
-    margin: auto; 
-    text-align: center;
-}
-.banner {
-    box-shadow: 0 0 0 0 rgb(87, 114, 187);
-    transition: 0.2s;
-    border-radius: 8px;
-    margin-top: 48px;
-    max-width: 100%;
-}
-.banner:hover {
-    box-shadow: 0 0 12px 0 rgb(137, 181, 248);
+.appLink {
+    display: none;
 }
 
 @media all and (max-width: 975px){
@@ -234,10 +219,6 @@ h4 a:hover, h5 a:hover, h6 a:hover {
         color: rgba(255,255,255, 0.5);
         background-color: rgba(255,255,255, 0.25);
     }
-    .mobileLink img {
-        width: 180px;
-        padding-top: 16px;
-    }
     .websiteInfo{
         margin-top: 16px;
         padding: 8px;
@@ -260,9 +241,19 @@ h4 a:hover, h5 a:hover, h6 a:hover {
     #project-right {
         display: none;
     }
+    .appLink {
+        display: block;
+    }
+    .appLink p {
+        text-align: center;
+        margin: 1rem;
+    }
+    .appLink img {
+        width: 80%;
+    }
 }
 @media all and (min-width: 975px){
-    .introAlt, .mobileLink {
+    .introAlt {
         display: none;
     }
 }
