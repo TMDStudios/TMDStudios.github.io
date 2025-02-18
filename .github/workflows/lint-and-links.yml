@@ -1,0 +1,68 @@
+name: Code and Link Checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install -g eslint htmlhint csslint linkinator
+
+      - name: Run ESLint
+        run: eslint . --ext .js
+
+      - name: Run HTMLHint
+        run: htmlhint "**/*.html"
+
+      - name: Run CSSLint
+        run: csslint "**/*.css"
+
+      - name: Check for broken links
+        run: linkinator . --silent --recursive
+
+      - name: Check for missing media files (HTML, CSS, JS)
+        run: |
+          # Check HTML files for media references
+          MEDIA_FILES=$(grep -E -o 'src="[^"]*\.(png|ico|mp4)"' **/*.html | sed -E 's/src="(.*)"/\1/' | sort -u)
+          for file in $MEDIA_FILES; do
+            if [ ! -f "$file" ]; then
+              echo "Missing file: $file"
+              exit 1
+            fi
+          done
+          
+          # Check CSS files for background images and media references
+          MEDIA_FILES=$(grep -E -o 'url\([^\)]*\.(png|ico|mp4)\)' **/*.css | sed -E 's/url\(["\']?(.*)["\']?\)/\1/' | sort -u)
+          for file in $MEDIA_FILES; do
+            if [ ! -f "$file" ]; then
+              echo "Missing file: $file"
+              exit 1
+            fi
+          done
+
+          # Check JS files for media file references (in img src, background images, etc.)
+          MEDIA_FILES=$(grep -E -o '(["\'])[^"\']*\.(png|ico|mp4)\1' **/*.js | sed -E 's/["\']//g' | sort -u)
+          for file in $MEDIA_FILES; do
+            if [ ! -f "$file" ]; then
+              echo "Missing file: $file"
+              exit 1
+            fi
+          done
+
+      - name: Success message
+        run: echo "All checks passed!"
