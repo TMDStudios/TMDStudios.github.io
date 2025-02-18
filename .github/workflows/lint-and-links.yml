@@ -19,37 +19,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install eslint @eslint/js htmlhint csslint linkinator
+        run: npm ci
 
-      - name: Create ESLint config
-        run: |
-          echo 'import js from "@eslint/js";
-
-          export default [
-            js.configs.recommended,
-            {
-              languageOptions: {
-                globals: {
-                  document: "readonly",
-                  window: "readonly",
-                  setInterval: "readonly",
-                  clearInterval: "readonly",
-                },
-              },
-              rules: {
-                "no-unused-vars": "warn",
-                "no-console": "off"
-              },
-            }
-          ];' > $GITHUB_WORKSPACE/eslint.config.mjs
-
-      - name: Verify ESLint config exists
-        run: ls -lah $GITHUB_WORKSPACE
+      - name: Verify ESLint Installation
+        run: npx eslint --version || echo "ESLint is not installed"
 
       - name: Run ESLint
-        run: eslint . --config eslint.config.mjs .
+        run: npx eslint . --config eslint.config.mjs
 
       - name: Run HTMLHint
         run: |
@@ -67,7 +46,7 @@ jobs:
         run: |
           # Check HTML files for media references
           MEDIA_FILES=$(grep -E -o "src=\"[^\"]*\.(png|ico|mp4)\"" index.html | sed -E "s/src=\"(.*)\"/\1/" | sort -u)
-          echo "HTML Media Files: $MEDIA_FILES"  # Debug output
+          echo "HTML Media Files: $MEDIA_FILES"
           for file in $MEDIA_FILES; do
             if [ ! -f "$GITHUB_WORKSPACE/$file" ]; then
               echo "Missing file: $file"
@@ -77,7 +56,7 @@ jobs:
 
           # Check CSS files for background images and media references
           MEDIA_FILES=$(grep -E -o "url\([^\)]*\.(png|ico|mp4)\)" style.css | sed -E "s/url\([\"']?(.*)[\"']?\)/\1/" | sort -u)
-          echo "CSS Media Files: $MEDIA_FILES"  # Debug output
+          echo "CSS Media Files: $MEDIA_FILES"
           for file in $MEDIA_FILES; do
             if [ ! -f "$GITHUB_WORKSPACE/$file" ]; then
               echo "Missing file: $file"
@@ -85,9 +64,9 @@ jobs:
             fi
           done
 
-          # Check JS files for media file references (in img src, background images, etc.)
+          # Check JS files for media file references
           MEDIA_FILES=$(grep -E -o "([\"'])[^\"']*\.(png|ico|mp4)\1" app.js | sed -E "s/[\"']//g" | sort -u)
-          echo "JS Media Files: $MEDIA_FILES"  # Debug output
+          echo "JS Media Files: $MEDIA_FILES"
           for file in $MEDIA_FILES; do
             if [ ! -f "$GITHUB_WORKSPACE/$file" ]; then
               echo "Missing file: $file"
