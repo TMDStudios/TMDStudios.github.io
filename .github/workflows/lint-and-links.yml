@@ -30,6 +30,9 @@ jobs:
       - name: Run Stylelint
         run: npx stylelint style.css || true
 
+      - name: Check for broken links
+        run: npx linkinator . --skip 'https://www.linkedin.com/*'
+
       - name: Check for missing media files (HTML, CSS, JS)
         run: |
           # Check HTML files for media references
