@@ -282,7 +282,7 @@ let totalImages = 1;
 let intervalId;
 const mediaContainer = document.getElementById("mediaContainer");
 const description = document.getElementById("description");
-const appLink = document.getElementById("appLink");
+const appLink = document.getElementById("app-link");
 
 function prevApp(){
     if(currentApp>0){
@@ -316,10 +316,10 @@ function showApp(){
         mediaContainer.innerHTML = `<video id="video" width="320" height="480" autoplay muted controls loop poster="${apps[currentApp].poster}"><source src="${apps[currentApp].video}" type="video/mp4">Your browser does not support the video tag.</video>`
         description.innerHTML = apps[currentApp].description;
     }else{
-        mediaContainer.innerHTML = '<img id="websiteImg" alt="Website screenshot" onclick="viewImage()" src="'+apps[currentApp].thumb+'"/><div class="websiteInfo">'+apps[currentApp].description+'</div>';
+        mediaContainer.innerHTML = '<img id="website-img" alt="Website screenshot" onclick="viewImage()" src="'+apps[currentApp].thumb+'"/><div class="website-info">'+apps[currentApp].description+'</div>';
         description.innerHTML = '';
         projectRight.style.display = "none";
-        const websiteImg = document.getElementById("websiteImg");
+        const websiteImg = document.getElementById("website-img");
         if(apps[currentApp].hasSlideshow){
             currentIndex = 0;
             totalImages = apps[currentApp].images.length-1;
@@ -335,7 +335,7 @@ function showApp(){
 }
 
 function updateImage(){
-    document.getElementById("websiteImg").src = apps[currentApp].images[currentIndex];
+    document.getElementById("website-img").src = apps[currentApp].images[currentIndex];
 }
 
 function nextImg(){
