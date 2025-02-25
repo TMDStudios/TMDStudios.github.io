@@ -1,7 +1,6 @@
 {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "indentation": 2,
-      "string-quotes": "double"
-    }
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "declaration-property-value-no-unknown": true
+  }
 }

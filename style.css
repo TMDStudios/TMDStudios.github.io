@@ -34,23 +34,23 @@ h6 {
     text-align: center;
 }
 
-.intro a {
+h4 a, h5 a, h6 a, .project-right a {
     text-decoration: none;
     color: rgb(189 238 255);
 }
 
-.intro a:hover {
-    color: #333;
-    text-decoration: underline;
-}
-
-h4 a, h5 a, h6 a, .project-right a {
+.intro a {
     text-decoration: none;
     color: rgb(189 238 255);
 }
 
 h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     color: #335bdb;
+}
+
+.intro a:hover {
+    color: #333;
+    text-decoration: underline;
 }
 
 .website-info p {
@@ -183,7 +183,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     display: none;
 }
 
-@media (max-width: 975px) {
+@media (width <= 975px) {
     body {
         width: 96vw;
         max-width: 96vw;
@@ -299,7 +299,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     }
 }
 
-@media (min-width: 975px) {
+@media (width >= 975px) {
     .intro-alt {
         display: none;
     }
