@@ -191,7 +191,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     }
 
     .header {
-        height: 180px;
+        height: 20%;
         width: fit-content;
         margin: auto;
     }
@@ -210,7 +210,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
 
     .project {
         width: 100%;
-        height: 50%;
+        height: 60%;
         background-image: linear-gradient(to right, black, black);
         overflow: hidden;
         align-items: center;
@@ -287,6 +287,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
 
     .app-link {
         display: block;
+        height: 15%;
     }
 
     .app-link p {
@@ -295,7 +296,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     }
 
     .app-link img {
-        width: 80%;
+        width: 75%;
     }
 }
 

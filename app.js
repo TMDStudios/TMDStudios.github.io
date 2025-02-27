@@ -358,3 +358,7 @@ function viewImage(){
 const appHeight = () => document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
 window.addEventListener('resize', appHeight)
 appHeight()
+
+window.prevApp = prevApp;
+window.nextApp = nextApp;
+window.viewImage = viewImage;
