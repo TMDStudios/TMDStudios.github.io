@@ -29,6 +29,32 @@ const apps = [
         "gitHubLink":""
     },
     {
+        "name":"MingSec",
+        "description": `
+            <h5><a href="https://github.com/TMDStudios/MingSec" target="_blank">MingSec</a></h5>
+            <p>DIY home security system designed to leverage OpenCV for motion detection</p>
+            <hr>
+            <p>Python, OpenCV, Dropbox API, Django, REST API, JavaScript, Kotlin, Linux, SSH</p>
+        `,
+        "link":'<a href="https://github.com/TMDStudios/MingSec" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "video":"",
+        "poster":"",
+        "hasVideo":false,
+        "thumb":"media/MingSecWebsiteThumb.png",
+        "fullImg":"media/MingSecWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/MingSec",
+        "hasSlideshow":true,
+        "images":[
+            "media/MingSecWebsiteThumb.png",
+            "media/MingSecWebsiteThumb1.png",
+            "media/MingSecWebsiteThumb2.png",
+            "media/MingSecWebsiteThumb3.png",
+            "media/MingSecWebsiteThumb4.png",
+            "media/MingSecWebsiteThumb5.png",
+            "media/MingSecWebsiteThumb6.png"
+        ]
+    },
+    {
         "name":"Buddy Breakout",
         "description": `
             <h4>Buddy Breakout</h4>
@@ -56,6 +82,31 @@ const apps = [
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
+    },
+    {
+        "name":"Restaurant Demo",
+        "description": `
+            <h5><a href="https://tmdstudios.github.io/restaurant" target="_blank">Restaurant Demo</a></h5>
+            <p>A restaurant website demo</p>
+            <hr>
+            <p>JavaScript, React, REST API, HTML, CSS, Axios, React Hooks, Dialog, Vite, GitHub Actions</p>
+        `,
+        "link":'<a href="https://github.com/TMDStudios/restaurant" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "video":"",
+        "poster":"",
+        "hasVideo":false,
+        "thumb":"media/RestaurantWebsiteThumb.png",
+        "fullImg":"media/RestaurantWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/restaurant",
+        "hasSlideshow":true,
+        "images":[
+            "media/RestaurantWebsiteThumb.png",
+            "media/RestaurantWebsiteThumb1.png",
+            "media/RestaurantWebsiteThumb2.png",
+            "media/RestaurantWebsiteThumb3.png",
+            "media/RestaurantWebsiteThumb4.png",
+            "media/RestaurantWebsiteThumb5.png"
+        ]
     },
     {
         "name":"Puzzled Knight",
@@ -89,6 +140,34 @@ const apps = [
         "gitHubLink":""
     },
     {
+        "name":"Study Room",
+        "description": `
+            <h5><a href="https://studyroom.up.railway.app/" target="_blank">Study Room</a></h5>
+            <p>Open-source platform for students to improve their English vocabulary and grammar</p>
+            <hr>
+            <p>JavaScript, REST API, HTML, CSS, AJAX, DOM Manipulation, Event Handling, XMLHttpRequest</p>
+        `,
+        "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "video":"",
+        "poster":"",
+        "hasVideo":false,
+        "thumb":"media/StudyRoomWebsiteThumb.png",
+        "fullImg":"media/StudyRoomWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/StudyRoom",
+        "hasSlideshow":true,
+        "images":[
+            "media/StudyRoomWebsiteThumb.png",
+            "media/StudyRoomWebsiteThumb1.png",
+            "media/StudyRoomWebsiteThumb2.png",
+            "media/StudyRoomWebsiteThumb3.png",
+            "media/StudyRoomWebsiteThumb4.png",
+            "media/StudyRoomWebsiteThumb5.png",
+            "media/StudyRoomWebsiteThumb6.png",
+            "media/StudyRoomWebsiteThumb7.png",
+            "media/StudyRoomWebsiteThumb8.png"
+        ]
+    },
+    {
         "name":"Road To Rage",
         "description": `
             <h4>Road To Rage</h4>
@@ -120,6 +199,23 @@ const apps = [
         "gitHubLink":""
     },
     {
+        "name":"Game Room",
+        "description": `
+            <h5><a href="https://github.com/TMDStudios/GameRoom" target="_blank">Game Room</a></h5>
+            <p>A platform for educators to play games and/or review materials with their students</p>
+            <hr>
+            <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, STOMP, jQuery, Docker</p>
+        `,
+        "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "video":"",
+        "poster":"",
+        "hasVideo":false,
+        "thumb":"media/GameRoomWebsiteThumb.png",
+        "fullImg":"media/GameRoomWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/GameRoom",
+        "hasSlideshow":false
+    },
+    {
         "name":"Py Learning Companion",
         "description": `
             <h4>Py Learning Companion</h4>
@@ -147,66 +243,6 @@ const apps = [
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
-    },
-    {
-        "name":"MingSec",
-        "description": `
-            <h5><a href="https://github.com/TMDStudios/MingSec" target="_blank">MingSec</a></h5>
-            <p>DIY home security system designed to leverage OpenCV for motion detection</p>
-            <hr>
-            <p>Python, OpenCV, Dropbox API, Django, REST API, JavaScript, Kotlin, Linux, SSH</p>
-        `,
-        "link":'<a href="https://github.com/TMDStudios/MingSec" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
-        "video":"",
-        "poster":"",
-        "hasVideo":false,
-        "thumb":"media/MingSecWebsiteThumb.png",
-        "fullImg":"media/MingSecWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/MingSec",
-        "hasSlideshow":true,
-        "images":[
-            "media/MingSecWebsiteThumb.png",
-            "media/MingSecWebsiteThumb1.png",
-            "media/MingSecWebsiteThumb2.png",
-            "media/MingSecWebsiteThumb3.png",
-            "media/MingSecWebsiteThumb4.png",
-            "media/MingSecWebsiteThumb5.png",
-            "media/MingSecWebsiteThumb6.png"
-        ]
-    },
-    {
-        "name":"Game Room",
-        "description": `
-            <h5><a href="https://github.com/TMDStudios/GameRoom" target="_blank">Game Room</a></h5>
-            <p>A platform for educators to play games and/or review materials with their students</p>
-            <hr>
-            <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, STOMP, jQuery, Docker</p>
-        `,
-        "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
-        "video":"",
-        "poster":"",
-        "hasVideo":false,
-        "thumb":"media/GameRoomWebsiteThumb.png",
-        "fullImg":"media/GameRoomWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/GameRoom",
-        "hasSlideshow":false
-    },
-    {
-        "name":"Study Room",
-        "description": `
-            <h5><a href="https://studyroom.up.railway.app/" target="_blank">Study Room</a></h5>
-            <p>Open-source platform for students to improve their English vocabulary and grammar</p>
-            <hr>
-            <p>JavaScript, REST API, HTML, CSS, AJAX, DOM Manipulation, Event Handling, XMLHttpRequest</p>
-        `,
-        "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
-        "video":"",
-        "poster":"",
-        "hasVideo":false,
-        "thumb":"media/StudyRoomWebsiteThumb.png",
-        "fullImg":"media/StudyRoomWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/StudyRoom",
-        "hasSlideshow":false
     },
     {
         "name":"Ninja Stars",
