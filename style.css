@@ -231,11 +231,6 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
         height: 100%;
     }
 
-    .project-left img {
-        max-height: 96%;
-        padding-top: 2%;
-    }
-
     #video {
         width: 80%;
         max-height: 100%;
