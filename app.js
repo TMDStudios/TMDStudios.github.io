@@ -33,7 +33,7 @@ const apps = [
         "description": `
             <h5><a href="https://github.com/TMDStudios/MingSec" target="_blank">MingSec</a></h5>
             <p>DIY home security system designed to leverage OpenCV for motion detection</p>
-            <hr>
+            <hr class="description-hr">
             <p>Python, OpenCV, Dropbox API, Django, REST API, JavaScript, Kotlin, Linux, SSH</p>
         `,
         "link":'<a href="https://github.com/TMDStudios/MingSec" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
@@ -88,8 +88,8 @@ const apps = [
         "description": `
             <h5><a href="https://tmdstudios.github.io/restaurant" target="_blank">Restaurant Demo</a></h5>
             <p>A restaurant website demo</p>
-            <hr>
-            <p>JavaScript, React, REST API, HTML, CSS, Axios, React Hooks, Dialog, Vite, GitHub Actions</p>
+            <hr class="description-hr">
+            <p>JavaScript, React, REST API, Axios, React Hooks, Dialog, Vite, GitHub Actions</p>
         `,
         "link":'<a href="https://github.com/TMDStudios/restaurant" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
@@ -143,9 +143,9 @@ const apps = [
         "name":"Study Room",
         "description": `
             <h5><a href="https://studyroom.up.railway.app/" target="_blank">Study Room</a></h5>
-            <p>Open-source platform for students to improve their English vocabulary and grammar</p>
-            <hr>
-            <p>JavaScript, REST API, HTML, CSS, AJAX, DOM Manipulation, Event Handling, XMLHttpRequest</p>
+            <p>Open-source platform for students to improve their English</p>
+            <hr class="description-hr">
+            <p>JavaScript, REST API, AJAX, DOM Manipulation, Event Handling</p>
         `,
         "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
@@ -202,9 +202,9 @@ const apps = [
         "name":"Game Room",
         "description": `
             <h5><a href="https://github.com/TMDStudios/GameRoom" target="_blank">Game Room</a></h5>
-            <p>A platform for educators to play games and/or review materials with their students</p>
-            <hr>
-            <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, STOMP, jQuery, Docker</p>
+            <p>A platform for educators to play games or review materials with students</p>
+            <hr class="description-hr">
+            <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, jQuery, Docker</p>
         `,
         "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
@@ -248,9 +248,9 @@ const apps = [
         "name":"Ninja Stars",
         "description": `
             <h5><a href="https://github.com/TMDStudios/ninja-stars" target="_blank">Ninja Stars</a></h5>
-            <p>Tool designed to foster collaboration and support within bootcamp learning environments</p>
-            <hr>
-            <p>Python, Django, REST API, JWT, JavaScript, SPA, Chrome Extension, React</p>
+            <p>Tool for collaboration and support within bootcamp learning environments</p>
+            <hr class="description-hr">
+            <p>Python, Django, REST API, JWT, JavaScript, Chrome Extension, React</p>
         `,
         "link":'<a href="https://github.com/TMDStudios/ninja-stars" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
         "video":"",
@@ -319,6 +319,12 @@ let intervalId;
 const mediaContainer = document.getElementById("mediaContainer");
 const description = document.getElementById("description");
 const appLink = document.getElementById("app-link");
+
+if(screen.orientation){
+    screen.orientation.lock("portrait").catch(function(error){
+        console.log("Orientation lock failed:", error);
+    });
+}
 
 function prevApp(){
     if(currentApp>0){

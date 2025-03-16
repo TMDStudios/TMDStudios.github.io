@@ -79,7 +79,6 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
 
 .intro {
     padding: 8px;
-    margin-bottom: 24px;
     color: #dedcde;
     flex: 3;
     display: flex;
@@ -180,6 +179,10 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
 }
 
 .app-link {
+    display: none;
+}
+
+.rotate-message {
     display: none;
 }
 
@@ -298,5 +301,66 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
 @media (width >= 975px) {
     .intro-alt {
         display: none;
+    }
+}
+
+@media (width <= 975px) and (orientation: landscape) {
+    body {
+        width: 100dvw;
+        height: 100dvh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header {
+        height: 100%;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo, .intro {
+        flex: 1;
+        max-height: fit-content;
+    }
+    .project {
+        height: 100%;
+        flex: 3;
+    }
+    .intro-title {
+        display: none;
+    }
+    .photo img {
+        height: 75px;
+    }
+    .project-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #website-img {
+        max-width: auto;
+        margin-top: 0;
+        max-height: 66%;
+    }
+    .website-info {
+        margin: 0;
+        padding: 0;
+    }
+    .website-info p, .website-info h5 {
+        padding: 0;
+    }
+    .description-hr {
+        display: none;
+    }
+    .app-link {
+        display: none;
+    }
+    .rotate-message {
+        display: block;
+        color: #dedcde;
+        text-align: center;
+        padding-top: 4px;
     }
 }
