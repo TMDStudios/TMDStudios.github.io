@@ -18,9 +18,9 @@ const apps = [
                 <s>Apple App Store</s>, 
                 <a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank">Amazon Appstore</a>
             </p>
-            <p><a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png"/></a></p>
+            <p><a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a></p>
         `,
-        "link":'<a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a>',
         "video":"media/BlockWars.mp4",
         "poster":"media/BlockWars.png",
         "hasVideo":true,
@@ -36,7 +36,7 @@ const apps = [
             <hr class="description-hr">
             <p>Python, OpenCV, Dropbox API, Django, REST API, JavaScript, Kotlin, Linux, SSH</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/MingSec" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/MingSec" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -73,9 +73,9 @@ const apps = [
                 <s>Apple App Store</s>, 
                 <a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank">Amazon Appstore</a>
             </p>
-            <p><a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank"><img src="media/amazonBanner.png"/></a></p>
+            <p><a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a></p>
         `,
-        "link":'<a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank"><img src="media/amazonBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/TMD-Studios-Buddy-Breakout/dp/B088F6NF23" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a>',
         "video":"media/BuddyBreakout.mp4",
         "poster":"media/BuddyBreakout.png",
         "hasVideo":true,
@@ -87,11 +87,11 @@ const apps = [
         "name":"Restaurant Demo",
         "description": `
             <h5><a href="https://tmdstudios.github.io/restaurant" target="_blank">Restaurant Demo</a></h5>
-            <p>A restaurant website demo</p>
+            <p>Modern and elegant website for small restaurants to boost their online presence.</p>
             <hr class="description-hr">
             <p>JavaScript, React, REST API, Axios, React Hooks, Dialog, Vite, GitHub Actions</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/restaurant" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/restaurant" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -129,9 +129,9 @@ const apps = [
                 <a href="https://tmd-studios.itch.io/puzzled-knight-browser" target="_blank">itch.io</a>, 
                 <a href="https://www.kongregate.com/games/TMD_Studios/puzzled-knight" target="_blank">Kongregate</a>
             </p>
-            <p><a href="https://www.amazon.com/TMD-Studios-Puzzled-Knight/dp/B085CMGK2K" target="_blank"><img src="media/amazonBanner.png"/></a></p>
+            <p><a href="https://www.amazon.com/TMD-Studios-Puzzled-Knight/dp/B085CMGK2K" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a></p>
         `,
-        "link":'<a href="https://www.amazon.com/TMD-Studios-Puzzled-Knight/dp/B085CMGK2K" target="_blank"><img src="media/amazonBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/TMD-Studios-Puzzled-Knight/dp/B085CMGK2K" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a>',
         "video":"media/PuzzledKnight.mp4",
         "poster":"media/PuzzledKnight.png",
         "hasVideo":true,
@@ -147,7 +147,7 @@ const apps = [
             <hr class="description-hr">
             <p>JavaScript, REST API, AJAX, DOM Manipulation, Event Handling</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -188,9 +188,9 @@ const apps = [
                 <a href="https://tmd-studios.itch.io/road-to-rage-browser-version" target="_blank">itch.io</a>, 
                 <a href="https://www.kongregate.com/games/TMD_Studios/road-to-rage" target="_blank">Kongregate</a>
             </p>
-            <p><a href="https://www.amazon.com/TMD-Studios-Road-To-Rage/dp/B08595G3JR" target="_blank"><img src="media/amazonBanner.png"/></a></p>
+            <p><a href="https://www.amazon.com/TMD-Studios-Road-To-Rage/dp/B08595G3JR" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a></p>
         `,
-        "link":'<a href="https://www.amazon.com/TMD-Studios-Road-To-Rage/dp/B08595G3JR" target="_blank"><img src="media/amazonBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/TMD-Studios-Road-To-Rage/dp/B08595G3JR" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a>',
         "video":"media/RTR.mp4",
         "poster":"media/RTR.png",
         "hasVideo":true,
@@ -206,7 +206,7 @@ const apps = [
             <hr class="description-hr">
             <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, jQuery, Docker</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -234,9 +234,9 @@ const apps = [
                 <s>Apple App Store</s>, 
                 <a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank">Amazon Appstore</a>
             </p>
-            <p><a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank"><img src="media/amazonBanner.png"/></a></p>
+            <p><a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a></p>
         `,
-        "link":'<a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank"><img src="media/amazonBanner.png"/></a>',
+        "link":'<a href="https://www.amazon.com/dp/B08RLPC9LR" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a>',
         "video":"media/PLC.mp4",
         "poster":"media/PLC.png",
         "hasVideo":true,
@@ -252,7 +252,7 @@ const apps = [
             <hr class="description-hr">
             <p>Python, Django, REST API, JWT, JavaScript, Chrome Extension, React</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/ninja-stars" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/ninja-stars" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
@@ -276,9 +276,9 @@ const apps = [
             <br>
             <h5>Deployment:</h5>
             <p><s>Google Play</s></p>
-            <p><a href="https://github.com/TMDStudios/crypto_ledger_app_kotlin" target="_blank"><img src="media/GitHub_Logo_White.png"/></a></p>
+            <p><a href="https://github.com/TMDStudios/crypto_ledger_app_kotlin" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a></p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/crypto_ledger_app_kotlin" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/crypto_ledger_app_kotlin" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"media/CryptoLedger.mp4",
         "poster":"media/CryptoLedger.png",
         "hasVideo":true,
@@ -301,9 +301,9 @@ const apps = [
             <br>
             <h5>Deployment:</h5>
             <p><s>Google Play</s></p>
-            <p><a href="https://github.com/TMDStudios/MockTrader" target="_blank"><img src="media/GitHub_Logo_White.png"/></a></p>
+            <p><a href="https://github.com/TMDStudios/MockTrader" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a></p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/MockTrader" target="_blank"><img src="media/GitHub_Logo_White.png"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/MockTrader" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"media/MockTrader.mp4",
         "poster":"media/MockTrader.png",
         "hasVideo":true,

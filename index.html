@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="TMD Studios, Almin Piric, software development, web development, open-source, programming, developer portfolio, freelance software developer">
     <meta property="og:image" content="https://tmdstudios.files.wordpress.com/2023/01/logo-copy.png" />
     <meta property="og:title" content="TMD Studios">
-    <meta name="description" property="og:description" content="TMD Studios is a one-man software development team with a focus on open-source projects.">
+    <meta property="og:description" content="TMD Studios is a one-man software development team focused on open-source projects and custom software development solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tmdstudios.github.io/">
+    <meta name="twitter:title" content="TMD Studios">
+    <meta name="twitter:description" content="TMD Studios is a one-man software development team specializing in open-source projects and custom software solutions.">
+    <meta name="twitter:image" content="https://tmdstudios.files.wordpress.com/2023/01/logo-copy.png">
     <meta name="twitter:card" value="summary">
+    <link rel="canonical" href="https://tmdstudios.github.io/">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="media/favicon.ico?" type="image/x-icon" />
     <title>TMD Studios</title>
@@ -16,7 +23,7 @@
 <body>
     <div class="header">
         <div class="photo">
-            <h1><img src="media/Almin.png"></h1>
+            <h1><img src="media/Almin.png" alt="Profile photo of Almin"></h1>
         </div>
     
         <div class="intro">
@@ -68,16 +75,31 @@
                     <s>Apple App Store</s>, 
                     <a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank">Amazon Appstore</a>
                 </p>
-                <p><a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png"/></a></p>
+                <p><a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a></p>
             </div>
         </div>
         <p onclick="nextApp()" class="next">&gt;</p>
     </div>
 
     <div class="app-link" id="app-link">
-        <p><a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png"/></a></p>
+        <p><a href="https://www.amazon.com/dp/B089X9SRBG" target="_blank"><img src="media/amazonBanner.png" alt="Amazon App Store Banner"/></a></p>
     </div>
 
     <script type="text/javascript" src="app.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://tmdstudios.github.io/",
+          "name": "TMD Studios",
+          "description": "TMD Studios is a one-man software development team focused on open-source projects and custom software solutions.",
+          "logo": "https://tmdstudios.files.wordpress.com/2023/01/logo-copy.png",
+          "sameAs": [
+            "https://www.linkedin.com/in/alminpiric/",
+            "https://github.com/TMDStudios"
+          ],
+          "potentialAction": null
+        }
+    </script>
 </body>
 </html>
