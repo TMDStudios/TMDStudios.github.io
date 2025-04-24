@@ -140,31 +140,28 @@ const apps = [
         "gitHubLink":""
     },
     {
-        "name":"Study Room",
+        "name":"Loopy VT",
         "description": `
-            <h5><a href="https://studyroom.up.railway.app/" target="_blank">Study Room</a></h5>
-            <p>Open-source platform for students to improve their English</p>
+            <h5><a href="https://loopyvt.com" target="_blank">Loopy VT</a></h5>
+            <p>Modern and elegant website for small businesses to boost their online presence.</p>
             <hr class="description-hr">
-            <p>JavaScript, REST API, AJAX, DOM Manipulation, Event Handling</p>
+            <p>JavaScript, React, REST API, Axios, React Hooks, Vite, GitLab CI/CD, AWS</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/restaurant" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
-        "thumb":"media/StudyRoomWebsiteThumb.png",
-        "fullImg":"media/StudyRoomWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/StudyRoom",
+        "thumb":"media/LoopyWebsiteThumb.png",
+        "fullImg":"media/LoopyWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/restaurant",
         "hasSlideshow":true,
         "images":[
-            "media/StudyRoomWebsiteThumb.png",
-            "media/StudyRoomWebsiteThumb1.png",
-            "media/StudyRoomWebsiteThumb2.png",
-            "media/StudyRoomWebsiteThumb3.png",
-            "media/StudyRoomWebsiteThumb4.png",
-            "media/StudyRoomWebsiteThumb5.png",
-            "media/StudyRoomWebsiteThumb6.png",
-            "media/StudyRoomWebsiteThumb7.png",
-            "media/StudyRoomWebsiteThumb8.png"
+            "media/LoopyWebsiteThumb.png",
+            "media/LoopyWebsiteThumb1.png",
+            "media/LoopyWebsiteThumb2.png",
+            "media/LoopyWebsiteThumb3.png",
+            "media/LoopyWebsiteThumb4.png",
+            "media/LoopyWebsiteThumb5.png"
         ]
     },
     {
@@ -199,21 +196,32 @@ const apps = [
         "gitHubLink":""
     },
     {
-        "name":"Game Room",
+        "name":"Study Room",
         "description": `
-            <h5><a href="https://github.com/TMDStudios/GameRoom" target="_blank">Game Room</a></h5>
-            <p>A platform for educators to play games or review materials with students</p>
+            <h5><a href="https://studyroom.up.railway.app/" target="_blank">Study Room</a></h5>
+            <p>Open-source platform for students to improve their English</p>
             <hr class="description-hr">
-            <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, jQuery, Docker</p>
+            <p>JavaScript, REST API, AJAX, DOM Manipulation, Event Handling</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/StudyRoom" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
-        "thumb":"media/GameRoomWebsiteThumb.png",
-        "fullImg":"media/GameRoomWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/GameRoom",
-        "hasSlideshow":false
+        "thumb":"media/StudyRoomWebsiteThumb.png",
+        "fullImg":"media/StudyRoomWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/StudyRoom",
+        "hasSlideshow":true,
+        "images":[
+            "media/StudyRoomWebsiteThumb.png",
+            "media/StudyRoomWebsiteThumb1.png",
+            "media/StudyRoomWebsiteThumb2.png",
+            "media/StudyRoomWebsiteThumb3.png",
+            "media/StudyRoomWebsiteThumb4.png",
+            "media/StudyRoomWebsiteThumb5.png",
+            "media/StudyRoomWebsiteThumb6.png",
+            "media/StudyRoomWebsiteThumb7.png",
+            "media/StudyRoomWebsiteThumb8.png"
+        ]
     },
     {
         "name":"Py Learning Companion",
@@ -245,20 +253,20 @@ const apps = [
         "gitHubLink":""
     },
     {
-        "name":"Ninja Stars",
+        "name":"Game Room",
         "description": `
-            <h5><a href="https://github.com/TMDStudios/ninja-stars" target="_blank">Ninja Stars</a></h5>
-            <p>Tool for collaboration and support within bootcamp learning environments</p>
+            <h5><a href="https://github.com/TMDStudios/GameRoom" target="_blank">Game Room</a></h5>
+            <p>A platform for educators to play games or review materials with students</p>
             <hr class="description-hr">
-            <p>Python, Django, REST API, JWT, JavaScript, Chrome Extension, React</p>
+            <p>Java, Spring Boot, MySQL, JavaScript, WebSocket, SockJS, jQuery, Docker</p>
         `,
-        "link":'<a href="https://github.com/TMDStudios/ninja-stars" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
+        "link":'<a href="https://github.com/TMDStudios/GameRoom" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
         "video":"",
         "poster":"",
         "hasVideo":false,
-        "thumb":"media/NinjaStarsWebsiteThumb.png",
-        "fullImg":"media/NinjaStarsWebsite.png",
-        "gitHubLink":"https://github.com/TMDStudios/ninja-stars",
+        "thumb":"media/GameRoomWebsiteThumb.png",
+        "fullImg":"media/GameRoomWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/GameRoom",
         "hasSlideshow":false
     },
     {
@@ -285,6 +293,23 @@ const apps = [
         "thumb":"",
         "fullImg":"",
         "gitHubLink":""
+    },
+    {
+        "name":"Ninja Stars",
+        "description": `
+            <h5><a href="https://github.com/TMDStudios/ninja-stars" target="_blank">Ninja Stars</a></h5>
+            <p>Tool for collaboration and support within bootcamp learning environments</p>
+            <hr class="description-hr">
+            <p>Python, Django, REST API, JWT, JavaScript, Chrome Extension, React</p>
+        `,
+        "link":'<a href="https://github.com/TMDStudios/ninja-stars" target="_blank"><img src="media/GitHub_Logo_White.png" alt="GitHub Logo"/></a>',
+        "video":"",
+        "poster":"",
+        "hasVideo":false,
+        "thumb":"media/NinjaStarsWebsiteThumb.png",
+        "fullImg":"media/NinjaStarsWebsite.png",
+        "gitHubLink":"https://github.com/TMDStudios/ninja-stars",
+        "hasSlideshow":false
     },
     {
         "name":"Mock Trader",
