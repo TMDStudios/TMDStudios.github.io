@@ -61,7 +61,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
+    height: 260px;
 }
 
 .header p, .header li {
@@ -75,6 +75,31 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
 .photo img {
     height: 200px;
     border-radius: 50%;
+}
+
+.redirect-note {
+    background: linear-gradient(to right, #f5f5f5, #e4e4e4);
+    border-left: 6px solid rgb(33 33 33);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(33 33 33);
+    margin: 0.5rem 0;
+    box-shadow: 4px 4px 4px rgba(32 32 32 / 50%);
+}
+
+.redirect-note p {
+    margin: 0;
+    color: #333;
+}
+
+.redirect-note a {
+    text-decoration: none;
+    color: #333;
+}
+
+.redirect-note a:hover {
+    color: slategray;
 }
 
 .intro {
@@ -96,7 +121,7 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     background-color: rgba(0 0 0 / 75%);
     background-image: linear-gradient(to right, black, black, rgb(18 18 18), rgb(50 50 50));
     box-shadow: 4px 4px 4px rgba(32 32 32 / 50%);
-    border-radius: 12px;
+    border-radius: 8px;
     height: 496px;
     align-items: center;
 
@@ -194,9 +219,14 @@ h4 a:hover, h5 a:hover, h6 a:hover, .project-right a:hover {
     }
 
     .header {
-        height: 20%;
+        height: fit-content;
         width: fit-content;
+        padding-top: 1rem;
         margin: auto;
+    }
+
+    .redirect-note {
+        font-weight: 500;
     }
 
     .photo img {
